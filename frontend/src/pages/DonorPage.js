@@ -223,7 +223,7 @@ const DonorPage = () => {
             </Select>
           </FormControl>
           <TextField
-            label="Units Donated"
+            label="Units to Donate"
             type="number"
             fullWidth
             name="unitsDonated"
