@@ -145,6 +145,11 @@ const Dashboard = () => {
       route: "/certificate",
       icon: "🏆",
     },
+    {
+    title: "Blood Awareness Hub",
+    route: "/awareness",
+    icon: "📚",
+  },
   ];
 
   if (loading) {

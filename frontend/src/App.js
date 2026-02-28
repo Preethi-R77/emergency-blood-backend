@@ -14,11 +14,16 @@ import ShortageAlertPage from "./pages/ShortageAlertPage";
 import AvailableBloodStockPage from "./pages/AvailableBloodStockPage";
 import RequestedUsersListPage from "./pages/RequestedUsersListPage";
 import DonorCertificatePage from "./pages/DonorCertificatePage";
+import BloodAwarenessHub from "./pages/awareness/BloodAwarenessHub";
+import MythFacts from "./pages/awareness/MythFacts";
+import EligibilityChecker from "./pages/awareness/EligibilityChecker";
+import DidYouKnow from "./pages/awareness/DidYouKnow";
+import BloodCompatibilityChart from "./pages/awareness/BloodCompatibilityChart";
 
 function App() {
   return (
-    <Router>
-      <AuthProvider>
+    <AuthProvider>
+      <Router>
         <Navbar />
         <Routes>
           <Route path="/" element={<LandingPage />} />
@@ -87,9 +92,59 @@ function App() {
               </ProtectedRoute>
             }
           />
+        
+
+{/* 👇 Awareness Main Module */}
+<Route
+  path="/awareness"
+  element={
+    <ProtectedRoute>
+      <BloodAwarenessHub />
+    </ProtectedRoute>
+  }
+/>
+
+{/* 👇 Sub Modules */}
+
+<Route
+  path="/awareness/myth-facts"
+  element={
+    <ProtectedRoute>
+      <MythFacts />
+    </ProtectedRoute>
+  }
+/>
+
+<Route
+  path="/awareness/eligibility"
+  element={
+    <ProtectedRoute>
+      <EligibilityChecker />
+    </ProtectedRoute>
+  }
+/>
+
+<Route
+  path="/awareness/did-you-know"
+  element={
+    <ProtectedRoute>
+      <DidYouKnow />
+    </ProtectedRoute>
+  }
+/>
+
+<Route
+  path="/awareness/compatibility-chart"
+  element={
+    <ProtectedRoute>
+      <BloodCompatibilityChart />
+    </ProtectedRoute>
+  }
+/>
+
         </Routes>
-      </AuthProvider>
-    </Router>
+      </Router>
+    </AuthProvider>
   );
 }
 
