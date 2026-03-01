@@ -19,7 +19,7 @@ const BloodCompatibilityChart = () => {
     <div style={styles.container}>
       {/* Back Button */}
       <button style={styles.backButton} onClick={() => navigate(-1)}>
-        ← Back
+        ← Back to Awareness Hub
       </button>
 
       <h1 style={styles.title}>Blood Compatibility Chart</h1>

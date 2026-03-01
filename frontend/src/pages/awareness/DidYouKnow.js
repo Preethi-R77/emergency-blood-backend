@@ -81,7 +81,7 @@ const DidYouKnow = () => {
     <div style={styles.container}>
       {/* Back Button */}
       <button style={styles.backButton} onClick={() => navigate("/awareness")}>
-        ← Back
+        ← Back to Awareness Hub
       </button>
 
       <h1 style={styles.title}>Did You Know?</h1>

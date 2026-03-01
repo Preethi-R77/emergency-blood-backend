@@ -58,7 +58,7 @@ const MythFacts = () => {
         style={styles.backButton}
         onClick={() => navigate("/awareness")}
       >
-        ← Back
+        ← Back to Awareness Hub
       </button>
 
       <h1 style={styles.title}>Myths vs Facts</h1>

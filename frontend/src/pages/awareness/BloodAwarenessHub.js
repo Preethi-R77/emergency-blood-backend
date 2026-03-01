@@ -34,7 +34,7 @@ const BloodAwarenessHub = () => {
         style={styles.backButton}
         onClick={() => navigate("/dashboard")}
       >
-        ← Back
+        ← Back to Dashboard
       </button>
 
       <h1 style={styles.title}>Blood Awareness Hub</h1>
