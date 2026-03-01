@@ -21,7 +21,7 @@ const BloodAwarenessHub = () => {
       icon: "💡",
     },
     {
-      title: "Compatibility Chart",
+      title: "Blood Compatibility Chart",
       path: "/awareness/compatibility-chart",
       icon: "🩸",
     },
